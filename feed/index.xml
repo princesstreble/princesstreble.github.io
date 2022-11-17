@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Princess Treble</title>
-	<atom:link href="http://princesstreble.github.io/feed/" rel="self" type="application/rss+xml" />
-	<link>http://princesstreble.github.io</link>
+	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
+	<link></link>
 	<description>Just another WordPress site</description>
 	<lastBuildDate>Wed, 02 Nov 2022 01:00:46 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,19 +21,19 @@
 	
 	<item>
 		<title>Hello world!</title>
-		<link>http://princesstreble.github.io/2022/11/02/hello-world/</link>
-					<comments>http://princesstreble.github.io/2022/11/02/hello-world/#comments</comments>
+		<link>/2022/11/02/hello-world/</link>
+					<comments>/2022/11/02/hello-world/#comments</comments>
 		
 		<dc:creator><![CDATA[mk@princess_treble]]></dc:creator>
 		<pubDate>Wed, 02 Nov 2022 01:00:46 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">http://princesstreble.github.io/?p=1</guid>
+		<guid isPermaLink="false">/?p=1</guid>
 
 					<description><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></description>
 										<content:encoded><![CDATA[<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://princesstreble.github.io/2022/11/02/hello-world/feed/</wfw:commentRss>
+					<wfw:commentRss>/2022/11/02/hello-world/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		
