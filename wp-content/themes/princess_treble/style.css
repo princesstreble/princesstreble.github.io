@@ -1,10 +1,10 @@
 /*
 	Theme Name: Princess Treble Custom WP Theme
 	Theme URI: https://princesstreble.com/
-	Description: InstaDeep Interim wesite
+	Description: Princess Treble wesite
 	Version: 1.0
-	Author: InstaDeep
-	Author URI: https://www.deeppack.ai/
+	Author: Princess Treble
+	Author URI: https://princesstreble.com/
 */
 
 @charset 'UTF-8';
@@ -78,6 +78,14 @@
     font-style: normal;
 }
 @font-face {
+    font-family: 'helveticaneue';
+    src: url('/wp-content/themes/princess_treble/fonts/helveticaneue-black-webfont.woff2') format('woff2'),
+         url('/wp-content/themes/princess_treble/fonts/helveticaneue-black-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+
+}
+@font-face {
     font-family: 'bender';
     src: url('/wp-content/themes/princess_treble/fonts/bender_tf_bold-webfont.woff2') format('woff2'),
          url('/wp-content/themes/princess_treble/fonts/bender_tf_bold-webfont.woff') format('woff');
@@ -117,7 +125,7 @@ h2 {font: 400 4.375em/1.115em Inter, Helvetica, Sans-Serif;padding: 20px 0; text
 h3 {font: 700 3.333em/70px bender, Helvetica, Sans-Serif;	}
 h4 {font: 400 1.75em/1.6875em Helvetica, Sans-Serif; color: #8b6526;}
 h5 {font: 700 1.555em/1.555em helveticaneue, Helvetica, Sans-Serif;}
-h6 {font: 700 5.1875em/70px bender, Helvetica, Sans-Serif;}
+h6 {font: 700 1.944em/1.944em bender, Helvetica, Sans-Serif;}
 hr {margin:0 0 0.5em}
 p {margin:0 0 30px}
 ul, ol {list-style:none;margin:0 0 1em}
@@ -259,58 +267,70 @@ margin: 0 2.5% 0 0.5%;  padding: 0px 30px; width: 97%; }
 #features .layer-1{background-color: rgba(255, 240, 207, 0.4); position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 #features-content-wrap {margin: 35px 0 0; display: flex; flex-direction: column;  align-items: center; gap:32px; }
 #features-rows-wrap  {margin-top: 90px; display: flex; width: 60%; flex-direction: column; gap: 100px; align-items: center; justify-content: center;}
-.feature-row-wrap{display: flex;gap: 96px;}
-.feature-row-wrap img{border: 3px solid #a87b2b; border-radius: 10px;}
-.feature-row-wrap p{margin: 0}
+.feature-row-wrap{display: flex;gap: 4.78%;}
+.feature-row-wrap .feature-row-left{width: 49.82%;}
+.feature-row-wrap img{border: 3px solid #a87b2b; border-radius: 10px; width: 100%}
+.feature-row-wrap p{margin: 0; width: 90%;}
 #features-rows-wrap .feature-row-wrap:nth-child(even) {flex-direction: row-reverse;}
-.feature-row-right {display: flex; flex-direction: column; gap: 20px;}
+.feature-row-right {display: flex; flex-direction: column; gap: 20px; width:45.4%}
 .feature-header-wrap {display: flex; align-items: center; gap: 8px; flex-wrap: wrap;}
 .feature-number {background-image: url(/wp-content/themes/princess_treble/images/number_bg.png); background-position: center; background-repeat: no-repeat; color: #fff; width: 61px; height: 61px;
 text-align: center; line-height: 61px; font-size: 20px; font-weight: 200;}
 
+/* Activities */
+#activities .section {position: relative}
+#activities .section .layer-1 {background-color: rgba(255, 240, 207, 0.4);position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+#activities .section .wrap {padding: 60px 0 80px;}
+#activities .section:nth-child(2) .wrap {padding: 100px 0 52px 0;}
+#activities .title-wrap {margin-bottom: 90px;}
+#activities .activity-header-wrap {display: flex; align-items: center; gap: 40px; flex-wrap: wrap;}
+#activities .activity-number {background-image: url(/wp-content/themes/princess_treble/images/number_bg.png); background-position: center; background-repeat: no-repeat; color: #fff; width: 61px; height: 61px;
+text-align: center; line-height: 61px; font-size: 20px; font-weight: 200;}
+#activities .category-wrap, #category  .category-page-wrap{width: 63.02%; margin: 0 auto}
+#activities .category-wrap .category-description p{margin:10px 0 40px 10px}
+#activities .activities-wrap, #category .activities-wrap{display: flex;justify-content: space-between; margin-bottom: 55px;}
+#activities .activities-wrap .single-activity img.activity-img, #category .activities-wrap .single-activity img.activity-img{border-radius: 22px;}
+#activities .small-title-wrap, #category .small-title-wrap {align-items: center;display: flex;justify-content: center;text-align: center;margin: 38px 0 18px;}
+#activities .small-title-wrap img, #category .small-title-wrap img { margin-right: 6px; width: 7px;}
+#activities .small-title-wrap img:last-of-type, #category .small-title-wrap img:last-of-type {margin-right: 0;margin-left: 6px;}
+#activities .small-title-wrap p,  #category .small-title-wrap p {font: 900 1.11em/1.11em helveticaneue, Helvetica, Sans-Serif;margin: 0;width: auto;}
+#activities .single-activity p.activity-type, #category .single-activity p.activity-type {margin: 0; text-align: center}
+#activities .pink-link-wrap, #category .pink-link-wrap {text-align:center}
+#activities a.pink-link, #category a.pink-link {height: 57px;width: 235px;background-size: cover; font: 900 1.11em/61px helveticaneue, Helvetica, Sans-Serif;}
+#category a.pink-link {margin-top: 25px;}
+#category #cat-hierarchy ul{display: flex; align-items: center; gap: 8px; flex-wrap: wrap;position: absolute;top: 25px;}
+#category #cat-hierarchy ul li a, #category #cat-hierarchy ul{color: #b87c40; font: 300 18px/26px Helvetica, Sans-Serif; text-transform: uppercase}
+#category #cat-hierarchy ul li.active a{font-weight: 700}
+#category .activities-wrap{margin-bottom: 0; margin-top: 110px;}
+#category .category-page-wrap .activities-wrap:nth-child(2){margin-top: 90px;}
+#category .title-wrap img{margin-right: 18px;}
+#category .title-wrap img:last-of-type{margin-right: 0; margin-left: 18px;}
+#category .section .wrap{padding: 120px 0 110px 0}
+#activities-content {position: relative}
+
 /* Characters */
 /* Main characters */
-#main-characters-content-wrap {
-display: flex;
-margin:80px auto;
-align-items:center;
-width: 60%;
-gap:24px;
-flex-wrap: nowrap;
-justify-content: center;
-}
-.main-character-wrap{
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 36px;  
-}
-.main-character-wrap .content {
-display: flex;
-flex-direction: column;
-gap: 36px;
-}
-.small-title-wrap{
-    display: flex;
-    align-items: center;
-    justify-content: center ;
-    gap: 8px;
-    
-}
-.main-character-small-title{
-margin: 0;
-font-weight: bold;
-}
-
-#features .layer-1{background-color: rgba(255, 240, 207, 1); position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
-
-
-/* Pictures of princess */
-#pictures-princess-slider-wrapper {
-    margin: 90px auto;
-    width: 80%;
-}
-
+#main-characters .wrap {padding: 120px 0 130px 0;}
+#main-characters #main-characters-wrap {width: 77.08%; margin:50px auto 0; min-height: 900px; height: auto; }
+#main-characters .carousel-item{height: auto; opacity:0!important}
+#main-characters .carousel-item.active{height: auto; opacity:1!important}
+#main-characters .carousel-item .content {width: 65%; margin: 0 auto;}
+#main-characters .carousel-item .content p:last-of-type{ margin: 0 ;}
+#main-characters .small-title-wrap{margin: 0 0 35px 0;display: flex; align-items: center; justify-content: center ; gap: 17px;}
+#main-characters h6{font: 700 1.33em/1.33em helveticaneue, Helvetica, Sans-Serif}
+#main-characters .main-character-image-wrap{width: 100%; margin-bottom: 50px; position:relative}
+#main-characters .main-character-image-wrap img{width: 100%; }
+#main-characters #char-carousel-next{position: absolute;right: 5.13%; top: 30%;}
+#main-characters #char-carousel-prev{position: absolute;left: 5.13%; top: 30%;}
+#main-characters #char-carousel-prev img, #main-characters #char-carousel-next img{width:72px}
+#pictures-of-princess {position: relative}
+#pictures-of-princess .layer-1{background-color: rgba(255, 240, 207, 0.4); position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+#pictures-of-princess .wrap{padding: 120px 0 127px 0;}
+#pictures-of-princess #pictures-princess-slider-wrapper { margin: 45px auto 0; width: 80.2%; }
+#pictures-of-princess #pictures-princess-slider-wrapper .carousel-item { width: 82.33%; height: auto; margin-left: 9%;}
+#pictures-of-princess #pictures-princess-slider { 
+-webkit-mask-image: linear-gradient(90deg, rgba(255,255,255,0) 0%,rgba(255,255,255,0.7) 9%,rgba(255,255,255,1) 9%, rgba(255,255,255,1) 91%,  rgba(255,255,255,0.7) 92%, rgba(255,255,255,0) 100%)}
+#pictures-of-princess #pictures-princess-slider.scrolling{-webkit-mask-image: radial-gradient(black, transparent)}
 
 @media only screen and (max-width: 1580px) {
 	#header #menu-wrapper {float: right; margin-right: 11.58%; width: 43.2%;}
