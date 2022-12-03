@@ -181,11 +181,11 @@ select {display: initial}
 
 /* Introduction Section */
 #introduction{ position: relative}
-#introduction .layer-1{background-color: rgba(255, 240, 207, 0.4); position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
-#introduction .layer-2{background-color: rgba(255, 240, 207, 0.4); position: absolute; top: 11.5%; left: 0; width: 100%; height: 88.5%;}
+#introduction .layer-1{background-color: rgba(255, 240, 207, 0.8); position: absolute; top: 0; left: 0; width: 100%; height: calc(100% - 6px);}
 #introduction-content-wrap .content{margin-top: 33px; margin: 33px auto 66px 14.5%; width: 64.5%;}
-.download-link{margin:0 auto; width: 320px;}
-.download-link:last-of-type{margin-top:25px;}
+#download-links{width: 35.93%; margin: 0 auto; display: flex; align-items: center;}
+.download-link{margin-right:8%; width: 46%;}
+.download-link:last-of-type{margin-right:0%;}
 .download-link img{width: 100%;}
 .download-link img:hover{opacity:0.7}
 #introduction-images-wrap{ margin: 100px auto 130px; overflow: hidden; width: 69%; }
@@ -193,13 +193,12 @@ select {display: initial}
 #introduction-images-wrap .introduction-single-item:last-of-type{margin-right: 0;}
 #introduction-images-wrap .introduction-single-item img{width: 100%;}
 .pink-link-wrap{display: flex;justify-content: center; text-align: center; width: 100%;}
-a.pink-link{background: url(/wp-content/themes/princess_treble/images/pink-btn-bg.png) no-repeat;  background-size: cover; color: #fff6e5; display: block; font: 600 1.333em/86px helveticaneue, Helvetica, Sans-Serif; height: 86px; text-align: center; width:350px; }
+a.pink-link{background: url(/wp-content/themes/princess_treble/images/pink-btn-bg.png) no-repeat;  background-size: cover; color: #ffe8a9; display: block; font: 600 1.333em/86px helveticaneue, Helvetica, Sans-Serif; height: 86px; text-align: center; width:350px; }
 a.pink-link:hover{opacity:0.7}
 
 /* Characters */
 #characters{ position: relative}
 #characters .wrap{padding: 120px 0 115px 0;}
-#characters .layer-1{background-color: rgba(255, 240, 207, 0.4); position: absolute; top: 0; left: 0; width: 100%; height: 11.5%;}
 #characters-hero-img-wrap {width: 100%; height: calc(100vw * 0.406)!important; overflow: hidden}
 #characters-hero-img-wrap img{width: 100%; min-height:100%}
 #characters #characters-content-wrap{margin-top: 48px; text-align: center;}
@@ -214,7 +213,7 @@ a.pink-link:hover{opacity:0.7}
 
 /* NewsLetter */
 #newsletter{ position: relative}
-#newsletter .layer-1{background-color: rgba(255, 240, 207, 0.4); position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+#newsletter .layer-1{background-color: rgba(255, 240, 207, 0.4); position: absolute; top: 0; left: 0; width: 100%; height: calc(100% - 6px);}
 #newsletter #newsletter-content-wrap{width: 35.41%; margin: 30px 11% 0 0;}
 #newsletter #newsletter-image-wrap{width: 16.14%;}
 #newsletter #newsletter-wrap{display: flex; justify-content: center; align-items: center; margin-top: 60px;}
@@ -227,7 +226,7 @@ a.pink-link:hover{opacity:0.7}
 
 /* Activities */
 #activities{background: url('/wp-content/themes/princess_treble/images/light-bg.png') repeat;}
-#activities #activities-wrap{width: 66.45%; margin:86px auto; text-align:center}
+#activities #activities-wrap{width: 66.45%; margin:86px auto 0; text-align:center}
 #activities #activities-wrap img{width: auto; margin-bottom:74px; max-height: 690px;}
 
 /* Contact Us */
@@ -266,11 +265,12 @@ margin: 0 2.5% 0 0.5%;  padding: 0px 30px; width: 97%; }
 /* Ebook Introduction Section */
 #ebook-introduction .wrap{padding: 120px 0 145px 0}
 #ebook-introduction-content-wrap {margin: 65px 0 0; display: flex; flex-direction: column;  align-items: center; gap:65px; }
-#ebook-introduction-content-wrap .content, #features-content-wrap .content {width: 50%; margin: 0}
+#ebook-introduction-content-wrap .content, #features-content-wrap .content {width: 56.15%; margin: 0}
 #ebook-introduction .download-link{ margin-top: 0;}
 
 /*  Features Section */
 #features {position: relative}
+#features:after {display: none;}
 #features .layer-1{background-color: rgba(255, 240, 207, 0.4); position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 #features-content-wrap {margin: 35px 0 0; display: flex; flex-direction: column;  align-items: center; gap:60px; }
 #features-rows-wrap  {margin-top: 90px; display: flex; width: 60%; flex-direction: column; gap: 100px; align-items: center; justify-content: center;}
@@ -286,7 +286,8 @@ text-align: center; line-height: 61px; font-size: 20px; font-weight: 200;}
 
 /* Activities */
 #activities .section {position: relative}
-#activities .section .layer-1 {background-color: rgba(255, 240, 207, 0.4);position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+#activities .section:last-of-type:after {display: none;}
+#activities .section .layer-1 {background-color: rgba(255, 240, 207, 0.4);position: absolute;top: 0;left: 0;width: 100%;height: calc(100% - 6px);}
 #activities .section .wrap {padding: 60px 0 80px;}
 #activities .section:nth-child(2) .wrap {padding: 100px 0 52px 0;}
 #activities .title-wrap {margin-bottom: 90px;}
@@ -305,7 +306,7 @@ text-align: center; line-height: 61px; font-size: 20px; font-weight: 200;}
 #activities .small-title-wrap p,  #category .small-title-wrap p {font: 900 1.11em/1.11em helveticaneue, Helvetica, Sans-Serif;margin: 0;width: auto;}
 #activities .single-activity p.activity-type, #category .single-activity p.activity-type {margin: 0; text-align: center}
 #activities .pink-link-wrap, #category .pink-link-wrap {text-align:center}
-#activities a.pink-link, #category a.pink-link {height: 57px;width: 235px;background-size: cover; font: 900 1.11em/61px helveticaneue, Helvetica, Sans-Serif;}
+#activities a.pink-link, #category a.pink-link {height: 57px;width: 235px;background-size: cover; line-height: 61px;}
 #category a.pink-link {margin-top: 25px;}
 #category #cat-hierarchy ul{display: flex; align-items: center; gap: 8px; flex-wrap: wrap;position: absolute;top: 25px;}
 #category #cat-hierarchy ul li a, #category #cat-hierarchy ul{color: #b87c40; font: 300 18px/26px Helvetica, Sans-Serif; text-transform: uppercase}
@@ -338,6 +339,7 @@ text-align: center; line-height: 61px; font-size: 20px; font-weight: 200;}
 #main-characters #char-carousel-prev img, #main-characters #char-carousel-next img{width:72px}
 #main-characters #char-carousel-prev:hover, #main-characters #char-carousel-next:hover{opacity: 0.7}
 #pictures-of-princess {position: relative}
+#pictures-of-princess:after {display: none;}
 #pictures-of-princess .layer-1{background-color: rgba(255, 240, 207, 0.4); position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 #pictures-of-princess .wrap{padding: 120px 0 127px 0;}
 #pictures-of-princess #pictures-princess-slider-wrapper { margin: 45px auto 0; width: 80.2%; }
