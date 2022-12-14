@@ -49,6 +49,15 @@ jQuery(document).ready(function($) {
 	function autoplayPicturesOfPrincessCarousel() {
 		setInterval(()=>$('#pictures-of-princess .carousel').carousel('next'), 4500);
 	}
+	$('#activities .activities-wrap .single-activity img.activity-img').each(function() {
+		$(this).height($('#activities .activities-wrap .single-activity:first-of-type img.activity-border').height());
+	});
+	$('#category .activities-wrap .single-activity img.activity-img').each(function() {
+		$(this).height($('#category .activities-wrap .single-activity:first-of-type img.activity-border').height());
+	});
+	$('#hamburger-icon').click(function(e){
+		$(this).toggleClass('open');	
+	});
 });
 
 
